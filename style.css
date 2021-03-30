@@ -197,33 +197,7 @@ p {
 	top: 0;
 }
 
-.header .contact-info{
-    color: #fff;
-    margin-left: 100px;
-}
 
-.header .contact-info ul{
-    margin-left: 41px;
-}
-
-.header .contact-info ul li{
-    display: inline-block;
-}
-
-.header .contact-info ul li a{
-    color: #fff;
-    font-size: 15px;
-    transition: all 0.3s;
-}
-
-.header .contact-info ul li a:hover{
-    color:#c32865;
-}
-
-.header .contact-info ul li a.sep{
-    margin: 0 16px;
-    opacity: 0.3;
-}
 /* End Header section */
 
 /* Hero Section */
@@ -339,7 +313,7 @@ p {
 
 /* About Section */
 #about {
-	background-image: url(bg1.jpg);
+	background-image: url(bg3.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -420,6 +394,34 @@ p {
 .social-icons ul li a:hover{
     background: #851313;
     color: #fff;
+}
+
+.about .contact-info{
+    color: #fff;
+    margin-left: 100px;
+}
+
+.about .contact-info ul{
+    margin-left: 41px;
+}
+
+.about .contact-info ul li{
+    display: inline-block;
+}
+
+.about .contact-info ul li a{
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.about .contact-info ul li a:hover{
+    color:#c32865;
+}
+
+.about .contact-info ul li a.sep{
+    margin: 0 16px;
+    opacity: 0.3;
 }
 /* End About Section */
 
@@ -515,6 +517,34 @@ p {
 	}
 	/* End Hero */
 
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Project */
+	#projects .project-item {
+		flex-direction: row;
+	}
+	#projects .project-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#projects .project-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#projects .all-projects .project-info {
+		height: 100%;
+	}
+	#projects .all-projects .project-img {
+		height: 100%;
+	}
+	/* End Project */
+
 	/* About */
 	#about .about {
 		flex-direction: row;
@@ -529,7 +559,7 @@ p {
 		top: 34px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid rgb(255, 0, 51);
+		border: 10px solid crimson;
 	}
 	#about .col-right {
 		text-align: left;
@@ -538,14 +568,46 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-
-	
 	/* End About */
 
-	
+	/* contact  */
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	/* End contact  */
+}
+/* End Media Query For Tablet */
 
 /* Media Query For Desktop */
-/* @media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
 	/* header */
 	#header .hamburger {
 		display: none;
@@ -572,4 +634,5 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
-} 
+}
+/* End  Media Query For Desktop */
